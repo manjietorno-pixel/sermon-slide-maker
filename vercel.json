@@ -1,6 +1,9 @@
 {
   "buildCommand": "npm install",
-  "env": {
-    "NODE_ENV": "production"
+  "outputDirectory": "public",
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "nodejs20.x"
+    }
   }
 }
